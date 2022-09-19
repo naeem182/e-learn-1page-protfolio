@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+body {
+    min-height: 100vh;
+    background-color: beige;
+}
+
+nav {
+    height: 13vh;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo img {
+    width: 100px;
+    height: 13vh;
+    margin-left: 20px;
+
+
+}
+
+.logo h3 {
+    margin-top: 8vh;
+
+}
+
+nav ul {
+    display: inline-block;
+    margin: 25px;
+    margin-right: 25px;
+
+}
+
+nav ul li {
+    text-align: right;
+    display: inline-block;
+    padding: 4px;
+    word-spacing: 5px;
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+nav ul li::after {
+    content: '';
+    background: crimson;
+    transition: .98s;
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    display: block;
+
+}
+
+nav ul li:hover::after {
+    width: 87%;
+}
+
+section {
+    height: 74vh;
+}
+
+.sec {
+    background-image: url(imges/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(4, 9, 30, 0, 7), rgba(4, 9, 30, 0, 7));
+}
+
+section .wel_box {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    opacity: .6;
+}
+
+.wel_box:hover {
+    opacity: .8;
+    background-color: aliceblue;
+}
+
+.wel_box h1 {
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.wel_box p {
+    margin: 2rem;
+    font-size: medium;
+    font-weight: 450;
+}
+
+footer {
+    height: 13vh;
+    background-color: azure;
+    text-align: center;
+}
+
+footer h3 {
+    padding-top: 10px;
+}
